@@ -1,5 +1,7 @@
 # Bootstrap table expandable
 
+Based on [jExpand](http://www.jankoatwarpspeed.com/expand-table-rows-with-jquery-jexpand-plugin/)
+
 ## Quick start
 
 - [Download the latest release](https://github.com/wfcreations/bootstrap-table-expandable/archive/master.zip)
