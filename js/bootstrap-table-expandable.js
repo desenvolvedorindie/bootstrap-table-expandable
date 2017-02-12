@@ -114,7 +114,7 @@
                         newTopOffset = base.isWindowScrolling ? (
                         isNaN(base.options.fixedOffset) ? base.options.fixedOffset.outerHeight() : base.options.fixedOffset) : base.$scrollableArea.offset().top + (!isNaN(base.options.fixedOffset) ? base.options.fixedOffset : 0),
                         offset = $this.offset(),
-
+						header = $this .find('thead'),
                         scrollTop = base.$scrollableArea.scrollTop() + newTopOffset,
                         scrollLeft = base.$scrollableArea.scrollLeft(),
 
@@ -123,7 +123,7 @@
 
                     if (scrolledPastTop && notScrolledPastBottom) {
                         newLeft = offset.left - scrollLeft + base.options.leftOffset;
-						newTop = -offset.top + base.options.marginTop;
+						newTop = -offset.top - header.height() + base.options.marginTop;
 						
                         base.$originalHeader.css({
                             'position': 'fixed',
@@ -284,13 +284,8 @@
         });
 		
 		$('.table-sticky-header').each(function () {
-			var table = $(this);
-			var header = table.find('thead');
-			var margin = table.offset().bottom;
-            
-			$(table).stickyTableHeaders({
-				marginTop: -header.height()
-			});
+			var table = $(this);            
+			$(table).stickyTableHeaders();
             
         });
     });
