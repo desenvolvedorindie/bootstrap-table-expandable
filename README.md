@@ -31,7 +31,7 @@ bootstrap-table-expandable/
 ## Example
 
 ```
-<table class="table table-expandable">
+<table class="table table-expandable table-sticky-header">
   <thead>
     <tr>
       <th>Country</th>
@@ -58,3 +58,5 @@ bootstrap-table-expandable/
 ### Result
 
 ![Example](https://raw.githubusercontent.com/wfcreations/bootstrap-table-expandable/master/example/img.png)
+
+![Example](https://raw.githubusercontent.com/wfcreations/bootstrap-table-expandable/master/example/sticky-header.png)
