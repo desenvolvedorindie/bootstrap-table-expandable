@@ -59,4 +59,6 @@ bootstrap-table-expandable/
 
 ![Example](https://raw.githubusercontent.com/wfcreations/bootstrap-table-expandable/master/example/img.png)
 
+#### Sticky Header
+
 ![Example](https://raw.githubusercontent.com/wfcreations/bootstrap-table-expandable/master/example/sticky-header.png)
